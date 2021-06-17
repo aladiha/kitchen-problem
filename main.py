@@ -105,5 +105,10 @@ if __name__ == '__main__':
     for row in map_:
         print(row)
     print()
-    print(f"best kitchen location: {find_path(map_, rows, cols)}")
+    res = find_path(map_, rows, cols)
+    if res:
+        print(f"best kitchen location: {find_path(map_, rows, cols)}")
+    else:
+        print("can't build a kitchen, some employees are not reachable")
+
 
